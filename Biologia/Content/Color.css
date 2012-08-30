@@ -1,0 +1,40 @@
+﻿/*------------------------------------------------------------------------------
+  Configurações de layout comum a todo o site
+    # Cores;
+    # Imagens e suas configurações;
+
+  Data de criação: 29/08/2012
+  Autor: Diogo de Lima
+  ------------------------------------------------------------------------------*/
+  
+div#cabecalho img.logo
+{
+	float: left;
+	height: 140px;
+	width: 140px;
+}
+div#main
+{
+	background-color: #FFFFFF;
+}
+div#main div#nav
+{
+	border-color: #EAEAEA;
+	background-color: #FDFCFC;
+	background-image: linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -moz-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -webkit-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -o-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EAEAEA');
+	border-bottom-color: #CACACA;
+	border-right-color: #CACACA;
+}
+div#main div#nav ul a
+{
+	color: #333;
+	text-decoration: none;
+}
+div#main div#nav ul li.separador
+{
+    background: url(../Content/images/Separador.png) no-repeat;
+}
