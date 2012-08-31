@@ -6,19 +6,23 @@
   Data de criação: 29/08/2012
   Autor: Diogo de Lima
   ------------------------------------------------------------------------------*/
-  
-div#cabecalho img.logo
-{
+body {
+    background-color: #116194;
+    color: #073F5A;
+}
+div#cabecalho img.logo {
 	float: left;
 	height: 140px;
 	width: 140px;
 }
-div#main
-{
+div.logado,
+div.logado a {
+    color: #FFF;
+}
+div#main {
 	background-color: #FFFFFF;
 }
-div#main div#nav
-{
+div#main div#nav {
 	border-color: #EAEAEA;
 	background-color: #FDFCFC;
 	background-image: linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
@@ -29,12 +33,21 @@ div#main div#nav
 	border-bottom-color: #CACACA;
 	border-right-color: #CACACA;
 }
-div#main div#nav ul a
-{
+div#main div#nav ul a {
 	color: #333;
 	text-decoration: none;
 }
-div#main div#nav ul li.separador
+div#main div#nav ul a.selected
 {
+    border-bottom-color: #4183C4;
+}
+div#main div#nav ul a:hover {
+	color: #4183C4;
+}
+div#main div#nav ul a.selected:hover
+{
+    color: #333;
+}
+div#main div#nav ul li.separador {
     background: url(../Content/images/Separador.png) no-repeat;
 }

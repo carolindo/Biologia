@@ -11,48 +11,15 @@
     <div id="cabecalho">
         <img alt="Biologia" class="logo" src="@Url.Content("~/Content/images/Bio.png")" />
         <img alt="Semana Acadêmica de Biologia" src="@Url.Content("~/Content/images/Titulo.png")" />
+        @Html.Partial("_LogOnPartial")
     </div>
     <div id="main">
-	    <div id="nav">
-		    <ul>
-			    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li class="separador">@Html.ActionLink("Inscrições", "Index", "Inscricao")</li>
-                <li class="separador">@Html.ActionLink("Sobre Evento", "About", "Home")</li>
-                <li class="separador">@Html.ActionLink("Cronograma de Palestras", "Cronograma", "Home")</li>
-                <li class="separador">@Html.ActionLink("Administração", "LogOn", "Account")</li>
-            </ul>
-        </div>
+        @{Html.RenderAction("MenuSuperior", "Menu");}
         <div id="insideMain">
             @RenderBody()
         </div>
     </div>
     <div id="base">
     </div>
-    @*<div class="page">
-        <div id="header">
-            <div id="title">
-                <h1>My MVC Application</h1>
-            </div>
-
-            <div id="logindisplay">
-                @Html.Partial("_LogOnPartial")
-            </div>
-
-            <div id="menucontainer">
-
-                <ul id="menu">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div id="main">
-            @RenderBody()
-            <div id="footer">
-            </div>
-        </div>
-    </div>*@
 </body>
 </html>

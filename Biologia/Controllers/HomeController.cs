@@ -14,15 +14,5 @@ namespace Biologia.Controllers
 
             return View();
         }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Cronograma()
-        {
-            return View();
-        }
     }
 }

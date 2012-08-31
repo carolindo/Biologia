@@ -8,39 +8,37 @@
   Data de criação: 29/08/2012
   Autor: Diogo de Lima
   ------------------------------------------------------------------------------*/
-
-*
-{
+* {
 	margin: 0;
 	padding: 0;
 	z-index: 100;
 }
-body
-{
-    background-color: #116194;
+body {
 	border: none;
-    color: #073F5A;
 	font-family: Arial, Verdana, Geneva, sans-serif;
 	font-size: 75%;
     margin: 0;
     padding: 0;
 }
-div#cabecalho
-{
+div#cabecalho {
 	clear: both;
 	height: 155px;
     margin: 5px auto 15px auto;
 	position: relative;
 	width: 986px;
 }
-div#main
-{
+div.logado {
+    float: right;
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+}
+div#main {
 	height: 360px;
 	position: relative;
 	width: 100%;
 }
-div#main div#nav
-{
+div#main div#nav {
 	border: 1px solid;
 	border-bottom: 2px solid;
 	border-right: 2px solid;
@@ -55,8 +53,7 @@ div#main div#nav
 	z-index: 150;
 	top: -23px;
 }
-div#main div#nav ul
-{
+div#main div#nav ul {
 	display: inline-block;
 	list-style-type: none;
 	height: 37px;
@@ -64,19 +61,21 @@ div#main div#nav ul
 	padding: 0;
 	position: relative;
 }
-div#main div#nav ul li
-{
+div#main div#nav ul li {
 	float: left;
 	font-size: 18px;
 }
-div#main div#nav ul a
-{
+div#main div#nav ul a {
 	display: block;
 	margin: 0 30px 0 30px;
 	padding: 6px 0 0 0;
 }
-div#main div#insideMain
-{
+div#main div#nav ul a.selected {
+    cursor: default;
+    border-bottom: 3px solid;
+    pointer-events: none;
+}
+div#main div#insideMain {
     margin: 0 auto;
     padding: 0 10px;
     width: 986px;
