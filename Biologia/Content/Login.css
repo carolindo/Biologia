@@ -1,0 +1,89 @@
+﻿/*------------------------------------------------------------------------------
+  Configurações de layout referente a tela de login
+
+  Data de criação: 01/09/2012
+  Autor: Diogo de Lima
+  ------------------------------------------------------------------------------*/
+div.center {
+    margin: 30px 23%;
+}
+div.login {
+    margin: 30px auto 0 auto;
+    width: 312px;
+    padding: 26px 24px 46px;
+    font-weight: normal;
+    border: 1px solid;
+    -moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    border-image: initial;
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+}
+.login label {
+    font-size: 14px;
+    font-weight: bold;
+}
+input#UserName,
+input#Password {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 1;
+    width: 98%;
+    padding: 3px;
+    margin-top: 2px;
+    margin-right: 6px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    outline: none;
+    -moz-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    border-image: initial;
+    -moz-border-radius: 5px; /* Para Firefox */
+    -webkit-border-radius: 5px; /*Para Safari e Chrome */
+    border-radius: 5px; /* Para Opera 10.5+*/
+}
+#signIn {
+    font-size: 14px;
+    width: 111px;
+    height: 24px;
+    border: 1px solid;
+    float: right;
+    padding: 0;
+    -moz-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    border-image: initial;
+    -moz-border-radius: 5px; /* Para Firefox */
+    -webkit-border-radius: 5px; /*Para Safari e Chrome */
+    border-radius: 5px; /* Para Opera 10.5+*/
+}
+td.left div.sign-in,
+td.left div.signin-box
+{
+    width: 378px !important;
+}div.login {
+    background: white;
+    border-color: #E5E5E5 !important;
+}
+.login label {
+    color: #00315E;
+}
+input#UserName,
+input#Password {
+    color: #116194;
+    background: #FBFBFB;
+    border-color: #E5E5E5;
+}
+#signIn {
+    color: #FFF;
+    border-color: #009;
+	background-color: #FDFCFC;
+	background-image: linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -moz-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -webkit-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -o-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B7DCF6', endColorstr='#116194');
+}

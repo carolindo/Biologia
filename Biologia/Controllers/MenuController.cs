@@ -16,7 +16,7 @@ namespace Biologia.Controllers
             var navLinks = new List<NavLink>();
 
             navLinks.Add(MontaMenu(aba, "Home", "Home", "Index"));
-            navLinks.Add(MontaMenu(aba, "Inscrições", "Inscricao", "Index"));
+            navLinks.Add(MontaMenu(aba, "Inscrições", "Inscritoes", "Create"));
             navLinks.Add(MontaMenu(aba, "Sobre Evento", "Sobre", "Sobre"));
             navLinks.Add(MontaMenu(aba, "Cronograma de Palestras", "Cronograma", "Cronograma"));
             navLinks.Add(MontaMenu(aba, "Administração", "Account", "LogOn"));

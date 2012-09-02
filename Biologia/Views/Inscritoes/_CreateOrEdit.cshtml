@@ -1,0 +1,44 @@
+@model Biologia.Models.Inscrito
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.nome)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.nome)
+    @Html.ValidationMessageFor(model => model.nome)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.instituicao)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.instituicao)
+    @Html.ValidationMessageFor(model => model.instituicao)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.email)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.email)
+    @Html.ValidationMessageFor(model => model.email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.telefone)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.telefone)
+    @Html.ValidationMessageFor(model => model.telefone)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.curso)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.curso)
+    @Html.ValidationMessageFor(model => model.curso)
+</div>
+

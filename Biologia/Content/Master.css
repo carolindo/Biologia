@@ -25,16 +25,17 @@ div#cabecalho {
 	height: 155px;
     margin: 5px auto 15px auto;
 	position: relative;
-	width: 986px;
+	width: 920px;
 }
-div.logado {
+div.logado,
+div#base p {
     float: right;
     font-size: 14px;
     position: relative;
     top: -5px;
 }
 div#main {
-	height: 500px;
+	min-height: 400px;
 	position: relative;
 	width: 100%;
 }
@@ -49,7 +50,7 @@ div#main div#nav {
 	padding: 4px 0 3px 0;
 	position: relative;
 	text-align: center;
-	width: 986px;
+	width: 920px;
 	z-index: 150;
 	top: -23px;
 }
@@ -78,5 +79,64 @@ div#main div#nav ul a.selected {
 div#main div#insideMain {
     margin: 0 auto;
     padding: 0 10px;
-    width: 986px;
+    width: 920px;
 }
+table.cronograma {
+    border: 3px solid;
+    border-image: initial;
+    -moz-border-radius: 10px; /* Para Firefox */
+    -webkit-border-radius: 10px; /*Para Safari e Chrome */
+    border-radius: 10px; /* Para Opera 10.5+*/
+    width: 780px;
+}
+table.cronograma td, 
+table.cronograma {
+    font-size: 15px;
+    font-weight: bold;
+}
+table.cronograma td {
+    border: 1px solid;
+    height: 44px;
+    width: 774px;
+}
+table.cronograma tr td{
+    text-align: center;
+}
+table.cronograma td.crono a {
+    text-decoration: none;
+}
+div#base {
+    margin: 30px auto 0 auto;
+    max-height: 400px;
+    width: 920px;
+}
+div#base div {
+    display: block;
+    margin: 0 auto 0 auto;
+    vertical-align: bottom;
+    width: 150px;
+}
+div#base p,
+div#base p a {
+    font-size: 8px;
+    text-align: center;
+}
+table {
+    border: 0;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 240px;
+}
+div#base table img.cederj{
+    margin: 0 0 0 -15px;
+}
+div#base table img.facebook  {
+    float: left;
+    heigth: 50px;
+    margin: 0 5px 0 10px;
+    width: 50px;
+}
+td#linhaVertical {
+    border-left: 1px solid;
+    width: 2px !important;
+}

@@ -16,7 +16,8 @@ div#cabecalho img.logo {
 	width: 140px;
 }
 div.logado,
-div.logado a {
+div.logado a,
+div#base p {
     color: #FFF;
 }
 div#main {
@@ -50,4 +51,28 @@ div#main div#nav ul a.selected:hover
 }
 div#main div#nav ul li.separador {
     background: url(../Content/images/Separador.png) no-repeat;
+}
+table.cronograma {
+    -moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+table.cronograma td, 
+table.cronograma {
+    background: #9AC6F4;
+    border-color: #E5E5E5 !important;
+    color: #FFF;
+}
+table.cronograma td.crono {
+    background: #4183C4;
+}
+table.cronograma td.crono a {
+    color: #FFF;
+}
+div#base p,
+div#base p a {
+    color: #FFF;
+}
+td#linhaVertical {
+    border-left-color: #969b9f;
 }
