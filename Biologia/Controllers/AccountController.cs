@@ -48,7 +48,7 @@ namespace Biologia.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Inscricoes");
                     }
                 }
                 else

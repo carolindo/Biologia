@@ -75,4 +75,19 @@ div#base p a {
 }
 td#linhaVertical {
     border-left-color: #969b9f;
+}body input[type="text"],
+body input[type="password"] {
+    color: #289B33;
+    background: #FBFBFB;
+    border-color: #E5E5E5;
+}
+#signIn {
+    color: #FFF;
+    border-color: #009;
+	background-color: #FDFCFC;
+	background-image: linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -moz-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -webkit-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -o-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B7DCF6', endColorstr='#116194');
 }

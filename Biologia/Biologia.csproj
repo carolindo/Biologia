@@ -65,8 +65,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CronogramaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InscricaoController.cs" />
-    <Compile Include="Controllers\InscritoesController.cs" />
+    <Compile Include="Controllers\InscricoesController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -80,8 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Color.css" />
+    <Content Include="Content\images\Ok.png" />
     <Content Include="Content\images\Bio.png" />
     <Content Include="Content\images\Facelogo.png" />
+    <Content Include="Content\images\Favicon.ico" />
+    <Content Include="Content\images\logo_cecierj.gif" />
     <Content Include="Content\images\lytebox\blank.gif" />
     <Content Include="Content\images\lytebox\close_black.png" />
     <Content Include="Content\images\lytebox\close_blue.png" />
@@ -161,12 +163,28 @@
     <Content Include="Content\images\lytebox\warning.png" />
     <Content Include="Content\images\Separador.png" />
     <Content Include="Content\images\Titulo.png" />
+    <Content Include="Content\jQueryUI\jquery-ui-1.8.18.custom.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Lytebox.css" />
     <Content Include="Content\Master.css" />
     <Content Include="Content\LightPage.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\lytebox.js" />
+    <Content Include="Scripts\confirmarDadosInscricao.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -219,22 +237,22 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\Create.cshtml" />
+    <Content Include="Views\Inscricoes\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\Edit.cshtml" />
+    <Content Include="Views\Inscricoes\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\Delete.cshtml" />
+    <Content Include="Views\Inscricoes\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\Details.cshtml" />
+    <Content Include="Views\Inscricoes\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\Index.cshtml" />
+    <Content Include="Views\Inscricoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscritoes\_CreateOrEdit.cshtml" />
+    <Content Include="Views\Inscricoes\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Cronograma\dezenove.cshtml" />
@@ -243,6 +261,7 @@
     <Content Include="Views\Cronograma\dezessete.cshtml" />
     <Content Include="Views\Cronograma\dezoito.cshtml" />
     <Content Include="Views\Cronograma\vinte.cshtml" />
+    <Content Include="Views\Inscricoes\TelaConfirmacao.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

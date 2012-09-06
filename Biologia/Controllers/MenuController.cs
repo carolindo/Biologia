@@ -16,10 +16,19 @@ namespace Biologia.Controllers
             var navLinks = new List<NavLink>();
 
             navLinks.Add(MontaMenu(aba, "Home", "Home", "Index"));
-            navLinks.Add(MontaMenu(aba, "Inscrições", "Inscritoes", "Create"));
+
+            if (User.Identity.IsAuthenticated)
+                navLinks.Add(MontaMenu(aba, "Lista Inscritos", "Inscricoes", "Index"));
+            else
+                navLinks.Add(MontaMenu(aba, "Inscrições", "Inscricoes", "Create"));
+
             navLinks.Add(MontaMenu(aba, "Sobre Evento", "Sobre", "Sobre"));
             navLinks.Add(MontaMenu(aba, "Cronograma de Palestras", "Cronograma", "Cronograma"));
-            navLinks.Add(MontaMenu(aba, "Administração", "Account", "LogOn"));
+
+            if (User.Identity.IsAuthenticated)
+                navLinks.Add(MontaMenu(aba, "Administração", "Inscricoes", "Index"));
+            else
+                navLinks.Add(MontaMenu(aba, "Administração", "Account", "LogOn"));
 
             return View(navLinks);
         }

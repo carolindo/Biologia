@@ -17,6 +17,6 @@ namespace Biologia.Models
         // 
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<Biologia.Models.BiologiaContext>());
 
-        public DbSet<Biologia.Models.Inscrito> Inscritoes { get; set; }
+        public DbSet<Biologia.Models.Inscrito> Inscricoes { get; set; }
     }
 }
