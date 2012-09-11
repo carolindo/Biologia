@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+@using Biologia.Domain
+@model IEnumerable<NavLink>
+<div id="nav">
+	<ul>
+        @{
+            int i = 1;
+
+            foreach (var link in Model)
+            {
+                var htmlAttributes = new Dictionary<string, object> { { "class", "" } };
+                
+                if (link.IsSelected)
+                {
+                    htmlAttributes = new Dictionary<string, object> { { "class", "selected" } };
+                }
+                if (i == 1)
+                {
+                    <li>
+                        @Html.RouteLink(link.Text, link.RouteValue, htmlAttributes)
+                    </li>
+                }else
+                {
+                    <li class="separador">
+                        @Html.RouteLink(link.Text, link.RouteValue, htmlAttributes)
+                    </li>
+                }
+
+                i++;
+            }
+        }
+    </ul>
+</div>

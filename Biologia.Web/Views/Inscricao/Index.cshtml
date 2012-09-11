@@ -1,0 +1,59 @@
+@model IEnumerable<Biologia.Domain.Inscricao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            nome
+        </th>
+        <th>
+            instituicao
+        </th>
+        <th>
+            email
+        </th>
+        <th>
+            telefone
+        </th>
+        <th>
+            curso
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.inscricaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.inscricaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.inscricaoId })
+        </td>
+        <td>
+			@item.nome
+        </td>
+        <td>
+			@item.instituicao
+        </td>
+        <td>
+			@item.email
+        </td>
+        <td>
+			@item.telefone
+        </td>
+        <td>
+			@item.curso
+        </td>
+    </tr>
+}
+
+</table>
+
+
