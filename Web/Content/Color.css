@@ -1,0 +1,93 @@
+﻿/*------------------------------------------------------------------------------
+  Configurações de layout comum a todo o site
+    # Cores;
+    # Imagens e suas configurações;
+
+  Data de criação: 29/08/2012
+  Autor: Diogo de Lima
+  ------------------------------------------------------------------------------*/
+body {
+    background-color: #116194;
+    color: #073F5A;
+}
+div#cabecalho img.logo {
+	float: left;
+	height: 140px;
+	width: 140px;
+}
+div.logado,
+div.logado a,
+div#base p {
+    color: #FFF;
+}
+div#main {
+	background-color: #FFFFFF;
+}
+div#main div#nav {
+	border-color: #EAEAEA;
+	background-color: #FDFCFC;
+	background-image: linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -moz-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -webkit-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	background-image: -o-linear-gradient(top, #FAFAFA 0%, #EAEAEA 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EAEAEA');
+	border-bottom-color: #CACACA;
+	border-right-color: #CACACA;
+}
+div#main div#nav ul a {
+	color: #333;
+	text-decoration: none;
+}
+div#main div#nav ul a.selected
+{
+    border-bottom-color: #4183C4;
+}
+div#main div#nav ul a:hover {
+	color: #4183C4;
+}
+div#main div#nav ul a.selected:hover
+{
+    color: #333;
+}
+div#main div#nav ul li.separador {
+    background: url(../Content/images/Separador.png) no-repeat;
+}
+table.cronograma {
+    -moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+table.cronograma td, 
+table.cronograma {
+    background: #9AC6F4;
+    border-color: #E5E5E5 !important;
+    color: #FFF;
+}
+table.cronograma td.crono {
+    background: #4183C4;
+}
+table.cronograma td.crono a {
+    color: #FFF;
+}
+div#base p,
+div#base p a {
+    color: #FFF;
+}
+td#linhaVertical {
+    border-left-color: #969b9f;
+}body input[type="text"],
+body input[type="password"] {
+    color: #289B33;
+    background: #FBFBFB;
+    border-color: #E5E5E5;
+}
+#signIn {
+    color: #FFF;
+    border-color: #009;
+	background-color: #FDFCFC;
+	background-image: linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -moz-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -webkit-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	background-image: -o-linear-gradient(top, #B7DCF6 0%, #116194 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B7DCF6', endColorstr='#116194');
+}

@@ -1,6 +1,0 @@
-﻿@if(Request.IsAuthenticated) {
-    <div class="logado">
-        <text>Bem-vindo(a) <b>@Context.User.Identity.Name</b>!
-        [ @Html.ActionLink("Sair", "LogOff", "Account") ]</text>
-    </div>
-}
