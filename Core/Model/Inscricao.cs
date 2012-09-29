@@ -5,6 +5,15 @@ namespace Core.Model
 {
     public class Inscricao : Entity
     {
+        //[DisplayName("Ouvinte")]
+        //public bool ouvinte { get; set; }
+
+        //[DisplayName("Apresentação Oral")]
+        //public bool apresentacaoOral { get; set; }
+
+        //[DisplayName("Poster")]
+        //public bool poster { get; set; }
+
         [Required]
         [DisplayName("Nome")]
         public string nome { get; set; }

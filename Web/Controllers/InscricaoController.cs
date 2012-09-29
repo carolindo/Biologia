@@ -16,7 +16,7 @@ namespace Web.Controllers
         // GET: /Inscricao/
          public ActionResult Index()
         {
-            //#region Filtro
+            #region Filtro
             //IDictionary<string, string> searchConditions = new Dictionary<string, string>();
 
             //if (this.Request.Form.AllKeys.Length > 0)
@@ -37,7 +37,7 @@ namespace Web.Controllers
             //    }
             //    this.TempData["SearchConditions"] = searchConditions;
             //}
-            //#endregion
+            #endregion
 
             return View(_Context.Inscricoes);
         }

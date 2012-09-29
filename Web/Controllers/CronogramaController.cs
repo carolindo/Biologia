@@ -37,5 +37,10 @@ namespace Web.Controllers
         {
             return View("vinte", "_Layout2");
         }
+
+        public ActionResult vinteUm()
+        {
+            return View("VinteUm", "_Layout2");
+        }
     }
 }

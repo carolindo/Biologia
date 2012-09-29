@@ -2,12 +2,32 @@
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
 
+
+
 <table class="inscrição">
+    @*<tr>
+        <td style="text-align: center;">
+            @Html.LabelFor(model => model.ouvinte)
+            
+            @Html.CheckBoxFor(model => model.ouvinte)
+        </td>
+        <td style="text-align: center;">
+            @Html.LabelFor(model => model.apresentacaoOral)
+            &nbsp;
+            @Html.CheckBoxFor(model => model.apresentacaoOral)
+        </td>
+        <td style="text-align: center;">
+            @Html.LabelFor(model => model.poster)
+            &nbsp;
+            @Html.CheckBoxFor(model => model.poster)
+        </td>
+    </tr>*@
+    <tr><td></td></tr>
     <tr>
         <td>
             @Html.LabelFor(model => model.nome)
         </td>
-        <td>
+        <td colspan="2">
             @Html.EditorFor(model => model.nome)
         </td>
     </tr>
@@ -15,7 +35,7 @@
         <td>
             @Html.LabelFor(model => model.instituicao)
         </td>
-        <td>
+        <td colspan="2">
             @Html.EditorFor(model => model.instituicao)
         </td>
     </tr>
@@ -23,7 +43,7 @@
         <td>
             @Html.LabelFor(model => model.email)
         </td>
-        <td>
+        <td colspan="2">
             @Html.EditorFor(model => model.email)
         </td>
     </tr>
@@ -31,7 +51,7 @@
         <td>
             @Html.LabelFor(model => model.telefone)
         </td>
-        <td>
+        <td colspan="2">
             @Html.EditorFor(model => model.telefone)
         </td>
     </tr>
@@ -39,7 +59,7 @@
         <td>
             @Html.LabelFor(model => model.curso)
         </td>
-        <td>
+        <td colspan="2">
             @Html.EditorFor(model => model.curso)
         </td>
     </tr>
