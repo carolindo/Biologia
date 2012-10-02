@@ -8,10 +8,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.min.js" ype="text/javascript"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/confirmarDadosInscricao.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("#tipoInsccricao").val() == "Ouvinte") {
+            $("#ApresentacaoOralOuPoster").hide();
+        }
+        else {
+            $("#ApresentacaoOralOuPoster").show();
+        }
 
-@using (Html.BeginForm("Create", "Inscricao", FormMethod.Post, new { id = "formularioInscricao", name = "formularioInscricao" }))
+        $("#tipoInsccricao").change(function () {
+            if ($(this).val() == "Ouvinte") {
+                $("#ApresentacaoOralOuPoster").hide();
+            }
+            else {
+                $("#ApresentacaoOralOuPoster").show();
+            }
+        });
+
+        $("#signIn").click(function () {
+            if ($("#tipoInsccricao").val() !== "Ouvinte") {
+                window.alert("Não se esqueça do resumo!! :P.");
+                return true;
+            }
+        });
+    });
+</script>
+
+@using (Html.BeginForm("Create", "Inscricao", FormMethod.Post, new {  enctype = "multipart/form-data", id = "formularioInscricao", name = "formularioInscricao" }))
 {
     @Html.ValidationSummary(true)
 
@@ -20,7 +46,7 @@
     </p>
     
     @Html.Partial("_CreateOrEdit", Model)
-
+    
     <p>
         <input id="signIn" type="submit" value="Ok" title="Ok" style="margin: 20px 470px 0 0;" />
     </p>
@@ -72,3 +98,4 @@
         </tr>
     </table>
 </div>
+<div style="height: 400px;"></div>

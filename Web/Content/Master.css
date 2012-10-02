@@ -22,10 +22,13 @@ body {
 }
 div#cabecalho {
 	clear: both;
-	height: 155px;
+	height: 178px;
     margin: 5px auto 15px auto;
 	position: relative;
 	width: 920px;
+}
+div#cabecalho table#gambLife {
+    float: left;
 }
 div.logado,
 div#base p {
@@ -140,7 +143,10 @@ td#linhaVertical {
     border-left: 1px solid;
     width: 2px !important;
 }#insideMain table.inscrição {    float: left;    margin: 25px 0 0 5px;}#insideMain table.inscrição td {    padding: 0 0 10px 0;    vertical-align: middle;}#insideMain table.inscrição label {    font-size: 14px;    font-weight: bold;    margin: 0 10px 0 0;}
+body div.legendas,
+body select#tipoInsccricao,
 body input[type="text"],
+body input[type="file"],
 body input[type="password"] {
     font-weight: 200;
     font-size: 18px;

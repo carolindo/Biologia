@@ -4,30 +4,20 @@
 
 
 
-<table class="inscrição">
-    @*<tr>
+<table class="inscrição" style="float: left;">
+    <tr>
         <td style="text-align: center;">
-            @Html.LabelFor(model => model.ouvinte)
-            
-            @Html.CheckBoxFor(model => model.ouvinte)
+            @Html.LabelFor(model => model.tipoInsccricao)
         </td>
-        <td style="text-align: center;">
-            @Html.LabelFor(model => model.apresentacaoOral)
-            &nbsp;
-            @Html.CheckBoxFor(model => model.apresentacaoOral)
+        <td>
+            @Html.DropDownListFor(model => model.tipoInsccricao, new SelectList(Model.tipos), new { style = "width: 355px !important;" })
         </td>
-        <td style="text-align: center;">
-            @Html.LabelFor(model => model.poster)
-            &nbsp;
-            @Html.CheckBoxFor(model => model.poster)
-        </td>
-    </tr>*@
-    <tr><td></td></tr>
+    </tr>
     <tr>
         <td>
             @Html.LabelFor(model => model.nome)
         </td>
-        <td colspan="2">
+        <td>
             @Html.EditorFor(model => model.nome)
         </td>
     </tr>
@@ -35,7 +25,7 @@
         <td>
             @Html.LabelFor(model => model.instituicao)
         </td>
-        <td colspan="2">
+        <td>
             @Html.EditorFor(model => model.instituicao)
         </td>
     </tr>
@@ -43,7 +33,7 @@
         <td>
             @Html.LabelFor(model => model.email)
         </td>
-        <td colspan="2">
+        <td>
             @Html.EditorFor(model => model.email)
         </td>
     </tr>
@@ -51,7 +41,7 @@
         <td>
             @Html.LabelFor(model => model.telefone)
         </td>
-        <td colspan="2">
+        <td>
             @Html.EditorFor(model => model.telefone)
         </td>
     </tr>
@@ -59,8 +49,25 @@
         <td>
             @Html.LabelFor(model => model.curso)
         </td>
-        <td colspan="2">
+        <td>
             @Html.EditorFor(model => model.curso)
         </td>
     </tr>
+    <tr id="ApresentacaoOralOuPoster" style="display: none;">
+        <td colspan=2>
+            <label for="resumo" style="color: #FF1111;">
+                Favor enviar o resumo de sua apresentação para o e-mail sabdca@gmail.com até o dia 13/10/2012, caso contrário sua participação será apenas como ouvinte.
+            </label>
+        </td>
+    </tr>
 </table>
+<div class="legendas" style="float: right; margin: 20px 40px 0 0; padding: 15px; color: #073F5A; line-height: 110%; text-align: justify;">
+    <b style="font-size: 16px;">Ajuda</b><br /><br />
+    <p style="font-size: 12px;">
+        <b style="font-size: 14px;">Tipo Inscrição</b><br />
+        <img alt="Error" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 2%; height: 2%; margin-right: 5px;" /><b>Ouvinte:</b> Participará apenas como telespectador;<br />
+        <img alt="Error" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 2%; height: 2%; margin-right: 5px;" /><b>Apresentação Oral:</b> Fará apresentação com auxilio de Slides. É obrigatório o envio do resumo;<br />
+        <img alt="Error" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 2%; height: 2%; margin-right: 5px;" /><b>Poster:</b> Fará a exposição de posteres. É obrigatório o envio do resumo.<br /><br />
+        Os resumos a serem enviados devem ser textos sobre o que trata sua apresentação e/ou o poster. Pedimos que enviem preferencialmente arquivos no formato PDF ou DOC.
+    </p>
+</div>

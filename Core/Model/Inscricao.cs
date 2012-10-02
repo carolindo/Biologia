@@ -1,18 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace Core.Model
 {
     public class Inscricao : Entity
     {
-        //[DisplayName("Ouvinte")]
-        //public bool ouvinte { get; set; }
+        [Required]
+        [DisplayName("Tipo Inscrição")]
+        public string tipoInsccricao { get; set; }
 
-        //[DisplayName("Apresentação Oral")]
-        //public bool apresentacaoOral { get; set; }
+        public List<string> tipos { get; set; }
 
-        //[DisplayName("Poster")]
-        //public bool poster { get; set; }
+        public Inscricao()
+        {
+            tipos = new List<string>
+            {
+                "Ouvinte",
+                "Apresentação Oral",
+                "Poster"
+            };
+        }
 
         [Required]
         [DisplayName("Nome")]

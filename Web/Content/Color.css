@@ -15,6 +15,12 @@ div#cabecalho img.logo {
 	height: 140px;
 	width: 140px;
 }
+div#cabecalho img.life {
+	float: right;
+	height: 140px;
+	width: 140px;
+	z-index: 500px
+}
 div.logado,
 div.logado a,
 div#base p {
@@ -75,7 +81,10 @@ div#base p a {
 }
 td#linhaVertical {
     border-left-color: #969b9f;
-}body input[type="text"],
+}
+body div.legendas,
+body select#tipoInsccricao,body input[type="text"],
+body input[type="file"],
 body input[type="password"] {
     color: #289B33;
     background: #FBFBFB;

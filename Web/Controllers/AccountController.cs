@@ -78,8 +78,16 @@ namespace Web.Controllers
 
         public ActionResult Register()
         {
-            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
-            return View();
+            if (Request.IsAuthenticated)
+            {
+                ViewBag.PasswordLength = MembershipService.MinPasswordLength;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("LogOn", "Account");
+            }
+            
         }
 
         [HttpPost]
