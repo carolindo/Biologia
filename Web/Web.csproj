@@ -172,8 +172,10 @@
     <Content Include="Content\Lytebox.css" />
     <Content Include="Content\Master.css" />
     <Content Include="Global.asax" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\confirmarDadosInscricao.js" />
     <Content Include="Scripts\lytebox.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
