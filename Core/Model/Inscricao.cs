@@ -32,6 +32,7 @@ namespace Core.Model
 
         [Required]
         [DisplayName("E-mail")]
+        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")]
         public string email { get; set; }
 
         [Required]
