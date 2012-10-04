@@ -181,7 +181,6 @@ body input[type="password"] {
     border-radius: 5px; /* Para Opera 10.5+*/
 }
 div#insideMain table.lista {
-    line-height: 3;
     width: 880px;
     margin: 5px auto20px auto;
     padding: 2px;

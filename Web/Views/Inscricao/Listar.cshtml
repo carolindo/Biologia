@@ -8,7 +8,7 @@
     @Html.ActionLink("> Fazer uma inscrição", "Index", "Inscricao", null, new { @style = "margin: 0 0 0 10px; text-decoration: none;" })
 </p>
 <p style="float: right; clear: both; margin: 0 25px 5px 0;">
-    <b>TOTAL DE INSCRITOS:</b> 
+    <b>Total de Inscritos:</b> @Model.Count() |  
     <b>Ouvinte:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Ouvinte").Count() | 
     <b>Poster:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Poster").Count() | 
     <b>Apresentação Oral:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Apresentação Oral").Count()
