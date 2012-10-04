@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://biologia.apphb.com/</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Sobre</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Inscricao</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Account/LogOn</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/dezesseis</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/dezessete</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/dezoito</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/dezenove</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/vinte</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://biologia.apphb.com/Cronograma/vinteUm</loc>
+  <lastmod>2012-10-04T09:23:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
