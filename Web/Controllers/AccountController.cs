@@ -48,7 +48,7 @@ namespace Web.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Inscricao");
+                        return RedirectToAction("Index", "Administracao");
                     }
                 }
                 else

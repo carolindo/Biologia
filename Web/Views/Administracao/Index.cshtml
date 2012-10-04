@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "1º Semana Acadêmica da Biologia no CEDERJ de Duque de Caxias - Área Administrativa";
+}
+
+<div class="legendas" style="margin: 20px auto; padding: 15px; color: #073F5A; line-height: 200%; text-align: justify; height: 180px; width: 200px;">
+    <b style="font-size: 16px; text-decoration: underline;">O que deseja fazer?</b><br />
+    <table style="font-size: 12px; width: 120px; margin: auto; text-align: center;">
+        <tr>
+            <td>
+                <img alt="Marcador" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 17px; height: 10px; margin-right: 5px;" />
+            </td>
+            <td>
+                <p><b>@Html.ActionLink("Lista Inscritos", "Listar", "Inscricao")</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Marcador" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 17px; height: 10px; margin-right: 5px;" />
+            </td>
+            <td>
+                <p><b>@Html.ActionLink("Seu Perfil", "Perfil", "Administracao")</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Marcador" src="@Url.Content("~/Content/images/blue_arrow.png")" style="width: 17px; height: 10px; margin-right: 5px;" />
+            </td>
+            <td>
+                <p><b><a href="http://www.gmail.com">Acessar Gmail</a></b></p>
+            </td>
+        </tr>
+    </table>
+</div>

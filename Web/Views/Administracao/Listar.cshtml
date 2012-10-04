@@ -1,0 +1,58 @@
+﻿@*@model IEnumerable<Core.Model.RegisterModel>*@
+@model IEnumerable<System.Web.Mvc.ViewPage<MembershipUserCollection>>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*<table>
+    <tr>
+        <th></th>
+        <th>
+            UserName
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Password
+        </th>
+        <th>
+            ConfirmPassword
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+        <td>
+            @item.
+        </td>
+        <td>
+            @item.Email
+        </td>
+        <td>
+            @item.Password
+        </td>
+        <td>
+            @item.ConfirmPassword
+        </td>
+    </tr>
+}
+
+</table>*@
+
+@foreach (MembershipUser item in Model)
+{
+    @item.UserName
+    @item.Email
+}

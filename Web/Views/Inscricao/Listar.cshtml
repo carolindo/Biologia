@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Core.Model.Inscricao>
+
+@{
+    ViewBag.Title = "1º Semana Acadêmica da Biologia no CEDERJ de Duque de Caxias - Lista Inscritos";
+}
+
+<p style="float: left; clear: both;">
+    @Html.ActionLink("> Fazer uma inscrição", "Index", "Inscricao", null, new { @style = "margin: 0 0 0 10px; text-decoration: none;" })
+</p>
+<p style="float: right; clear: both; margin: 0 25px 5px 0;">
+    <b>TOTAL DE INSCRITOS:</b> 
+    <b>Ouvinte:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Ouvinte").Count() | 
+    <b>Poster:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Poster").Count() | 
+    <b>Apresentação Oral:</b> @Model.Where(mbox => mbox.tipoInsccricao == "Apresentação Oral").Count()
+</p>
+<table class="lista">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+           Nome
+        </th>
+        <th>
+            Instituição
+        </th>
+        <th>
+            E-mail
+        </th>
+        <th>
+            Telefone
+        </th>
+        <th>
+            Curso
+        </th>
+        <th>
+            Tipo Inscrição
+        </th>
+        <th>
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr style="text-align: center;">
+        <td>
+            @item.Id
+        </td>
+        <td style="text-align: left; padding-left: 3px;">
+            @item.nome
+        </td>
+        <td>
+            @item.instituicao
+        </td>
+        <td>
+            @item.email
+        </td>
+        <td>
+            @item.telefone
+        </td>
+        <td>
+            @item.curso
+        </td>
+        <td>
+            @item.tipoInsccricao
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+            @*@Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
+            @Html.ActionLink("Deletar", "Deletar", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+<div style="height: 20px;">&nbsp;</div>

@@ -17,17 +17,17 @@ namespace Web.Controllers
 
             navLinks.Add(MontaMenu(aba, "Home", "Home", "Index"));
 
-            navLinks.Add(MontaMenu(aba, "Sobre Evento", "Sobre", "Sobre"));
+            navLinks.Add(MontaMenu(aba, "Sobre Evento", "Sobre", "Index"));
 
             if (!User.Identity.IsAuthenticated)
-                navLinks.Add(MontaMenu(aba, "Inscrições", "Inscricao", "Create"));
+                navLinks.Add(MontaMenu(aba, "Inscrições", "Inscricao", "Index"));
 
-            navLinks.Add(MontaMenu(aba, "Cronograma de Palestras", "Cronograma", "Cronograma"));
+            navLinks.Add(MontaMenu(aba, "Cronograma de Palestras", "Cronograma", "Index"));
 
             if (!User.Identity.IsAuthenticated)
                 navLinks.Add(MontaMenu(aba, "Administração", "Account", "LogOn"));
             else
-                navLinks.Add(MontaMenu(aba, "Lista de Inscritos", "Inscricao", "Index"));
+                navLinks.Add(MontaMenu(aba, "Administração", "Administracao", "Index"));
 
             return View(navLinks);
         }

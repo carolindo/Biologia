@@ -10,7 +10,7 @@ namespace Web.Controllers
     {
         //
         // GET: /Sobre/
-        public ActionResult Sobre()
+        public ActionResult Index()
         {
             return View();
         }

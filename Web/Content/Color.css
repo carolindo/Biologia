@@ -90,6 +90,13 @@ body input[type="password"] {
     background: #FBFBFB;
     border-color: #E5E5E5;
 }
+div#insideMain table.lista,
+div#insideMain table.lista th,
+div#insideMain table.lista tr,
+div#insideMain table.lista td {
+    background: #FBFBFB;
+    border-color: #B3B3B3;
+}
 #signIn {
     color: #FFF;
     border-color: #009;

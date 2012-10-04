@@ -1,0 +1,25 @@
+﻿@model MembershipUser
+
+@{
+    ViewBag.Title = "1º Semana Acadêmica da Biologia no CEDERJ de Duque de Caxias - Perfil";
+}
+
+<div class="legendas" style="float: left; margin: 20px 40px 0 0; padding: 15px; display: block; color: #073F5A; line-height: 110%; text-align: justify;">
+    <b style="font-size: 16px;">Perfil</b><br /><br />
+    <p style="font-size: 12px;">
+        <b>Nome de usuário:</b> @Model.UserName<br />
+        <b>Último Acesso:</b> @Model.LastLoginDate<br />
+        <b>E-mail:</b> @Model.Email
+    </p>
+</div>
+<table style="float: left; clear: both;">
+    <tr>
+        <td>
+            @Html.ActionLink("Voltar", "Index") |
+        </td>
+        <td>
+            @Html.ActionLink("Trocar Senha", "ChangePassword", "Account")
+        </td>
+    </tr>
+</table>
+

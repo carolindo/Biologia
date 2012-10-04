@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Semana Acadêmica da Biologia - Confirmação de inscrição";
+    ViewBag.Title = "1º Semana Acadêmica da Biologia no CEDERJ de Duque de Caxias - Confirmação de inscrição";
 }
 
 <div style="margin: 30px auto 0 auto; width: 580px;">
@@ -10,6 +10,11 @@
             </td>
             <td>
                 <h2 style="margin: 0 0 0 10px;">Parabéns sua inscrição foi realizada com sucesso!</h2>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2">
+                @Html.ActionLink("Fazer outra inscrição", "Index", "Inscricao")
             </td>
         </tr>
     </table>

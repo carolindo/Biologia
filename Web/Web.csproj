@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdministracaoController.cs" />
+    <Compile Include="Controllers\_AdministracaoController.cs" />
     <Compile Include="Controllers\CronogramaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InscricaoController.cs" />
@@ -256,10 +258,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscricao\Index.cshtml" />
+    <Content Include="Views\Inscricao\Listar.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Inscricao\Create.cshtml" />
+    <Content Include="Views\Inscricao\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Inscricao\_CreateOrEdit.cshtml" />
@@ -268,13 +270,28 @@
     <Content Include="Views\Inscricao\TelaConfirmacao.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Cronograma\Cronograma.cshtml" />
+    <Content Include="Views\Cronograma\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Sobre\Sobre.cshtml" />
+    <Content Include="Views\Sobre\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Cronograma\vinteUm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Administracao\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Inscricao\Editar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Inscricao\Deletar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_Administracao\Usuarios.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Administracao\Perfil.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

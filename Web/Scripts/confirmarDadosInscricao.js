@@ -25,6 +25,10 @@
             var field;
             var confirmDiv;
 
+            field = $("#tipoInsccricao");
+            confirmDiv = $("#confirmaTipoInscricao");
+            confirmDiv.html(field.val());
+
             field = $("#nome");
             confirmDiv = $("#confirmaNome");
             confirmDiv.html(field.val());

@@ -8,7 +8,7 @@ namespace Web.Controllers
 {
     public class CronogramaController : Controller
     {
-        public ActionResult Cronograma()
+        public ActionResult Index()
         {
             return View();
         }

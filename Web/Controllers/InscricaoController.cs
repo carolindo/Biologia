@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using Core.Data;
 using Core.Model;
-using System.Net.Mail;
-using System.Net;
-using System.IO;
+//using System.Net.Mail;
+//using System.Net;
+//using System.IO;
 
 
 namespace Web.Controllers
@@ -18,7 +18,7 @@ namespace Web.Controllers
 
         //
         // GET: /Inscricao/
-         public ActionResult Index()
+         public ActionResult Listar()
         {
             if (Request.IsAuthenticated)
             {
@@ -54,33 +54,26 @@ namespace Web.Controllers
         }
 
         //
-        // GET: /Inscricao/Details/5
-        public ActionResult Details(int id)
-         {
-             if (Request.IsAuthenticated)
-                 return View();
-             else
-                 return RedirectToAction("LogOn", "Account");
-        }
-
-        //
-        // GET: /Inscricao/Create
-        public ActionResult Create()
+        // GET: /Inscricao/
+        public ActionResult Index()
         {
             return View(new Inscricao());
         } 
 
         //
-        // POST: /Inscricao/Create
+        // POST: /Inscricao/
         [HttpPost]
-        public ActionResult Create(Inscricao collection)
+        public ActionResult Index(Inscricao collection)
         {
             if (collection != null)
             {
                 _Context.Inscricoes.Add(collection);
                 _Context.SaveChanges();
-                
-                return RedirectToAction("TelaConfirmacao", new { inscricaoComSucesso = true });
+
+                if (Request.IsAuthenticated)
+                    return RedirectToAction("Listar");
+                else
+                    return RedirectToAction("TelaConfirmacao", new { inscricaoComSucesso = true });
             }
 
             return View(collection);
@@ -136,6 +129,16 @@ namespace Web.Controllers
         //}
         #endregion
 
+        //
+        // GET: /Inscricao/Details/5
+        public ActionResult Details(int id)
+         {
+             if (Request.IsAuthenticated)
+                 return View();
+             else
+                 return RedirectToAction("LogOn", "Account");
+        }
+
         public ActionResult TelaConfirmacao(bool inscricaoComSucesso)
         {
             if (inscricaoComSucesso == true)
@@ -145,57 +148,66 @@ namespace Web.Controllers
         }
         
         //
-        // GET: /Inscricao/Edit/5
-        public ActionResult Edit(int id)
+        // GET: /Inscricao/Editar/5
+        public ActionResult Editar(int id)
         {
             if (Request.IsAuthenticated)
-                return View();
+            {
+                Inscricao usuarioParaEditar = _Context.Inscricoes.Find(id);
+                return View(usuarioParaEditar);
+            }
             else
                 return RedirectToAction("LogOn", "Account");
         }
 
         //
-        // POST: /Inscricao/Edit/5
+        // POST: /Inscricao/Editar/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Editar(Inscricao collection)
         {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            Inscricao inscrito = _Context.Inscricoes.Find(collection.Id);
+
+            if (inscrito.tipoInsccricao != collection.tipoInsccricao)
+                inscrito.tipoInsccricao = collection.tipoInsccricao;
+            if (inscrito.nome != collection.nome)
+                inscrito.nome = collection.nome;
+            if (inscrito.instituicao != collection.instituicao)
+                inscrito.instituicao = collection.instituicao;
+            if (inscrito.email != collection.email)
+                inscrito.email = collection.email;
+            if (inscrito.telefone != collection.telefone)
+                inscrito.telefone = collection.telefone;
+            if (inscrito.curso != collection.curso)
+                inscrito.curso = collection.curso;
+
+            _Context.SaveChanges();
+
+            return RedirectToAction("Listar");
         }
 
         //
-        // GET: /Inscricao/Delete/5
-        public ActionResult Delete(int id)
+        // GET: /Inscricao/Deletar/5
+        public ActionResult Deletar(int id)
         {
             if (Request.IsAuthenticated)
-                return View();
+            {
+                Inscricao usuarioParaDeletar = _Context.Inscricoes.Find(id);
+                return View(usuarioParaDeletar);
+            }
             else
                 return RedirectToAction("LogOn", "Account");
         }
 
         //
-        // POST: /Inscricao/Delete/5
+        // POST: /Inscricao/Deletar/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Deletar(Inscricao collection)
         {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var teste = _Context.Inscricoes.Where(i => i.Id == collection.Id).First();
+            _Context.Inscricoes.Remove(teste);
+            _Context.SaveChanges();
+
+            return RedirectToAction("Listar");
         }
     }
 }
