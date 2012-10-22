@@ -1,6 +1,18 @@
 ﻿@{
     ViewBag.Title = "1º Semana Acadêmica da Biologia no CEDERJ de Duque de Caxias - Home Page";
+    
+    @*if (TempData["notice"] != null)
+	{
+		 <p>@TempData["notice"]</p>
+	}*@
 }
+
+    <script type="text/javascript">
+        var temp = @TempData["notice"];
+        if (temp) {
+            alert("Insscrições encerradas. Aguarde o próximo evento.");
+        };
+    </script>
 
 <h2 style="padding: 25px 0 0 50px; font-size: 20px;">Sejam bem vindos ao 1º SAB do CEDERJ!!!</h2><br />
 

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Core.Data;
 using Core.Model;
+using System.Web.UI;
 //using System.Net.Mail;
 //using System.Net;
 //using System.IO;
@@ -57,7 +58,9 @@ namespace Web.Controllers
         // GET: /Inscricao/
         public ActionResult Index()
         {
-            return View(new Inscricao());
+             //return View(new Inscricao());
+            TempData["notice"] = "true";
+            return RedirectToAction("Index", "Home");
         } 
 
         //
